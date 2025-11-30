@@ -13,7 +13,7 @@ const firebaseConfig = {
   authDomain: "smart-irrigation-3826a.firebaseapp.com",
   databaseURL: "https://smart-irrigation-3826a-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "smart-irrigation-3826a",
-  storageBucket: "smart-irrigation-3826a.appspot.com",
+  storageBucket: "smart-irrigation-3826a.firebasestorage.app",
   messagingSenderId: "299755599351",
   appId: "1:299755599351:web:268f0a9710a4b3a528eaf2"
 };
@@ -142,4 +142,5 @@ if (page.includes("logs_charts")) {
     });
   });
 }
+
 
