@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SM | Irrigation Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="logo-box">
+        <div class="logo">SM</div>
+        <div class="details">
+          IoT Irrigation System <br />
+          Sandeep Mishra <br />
+          B.Tech IIoT – 03619051722 <br />
+          USAR
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="logs_charts.html">Analytics</a>
+      </nav>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+      <h1>Main Dashboard</h1>
+
+      <div class="card">
+        <h2>Moisture Levels</h2>
+        <p>Zone A: <strong id="moistA">0</strong>%</p>
+        <p>Zone B: <strong id="moistB">0</strong>%</p>
+      </div>
+
+      <div class="card">
+        <h2>Pump Status</h2>
+        <p>Pump A: <strong id="pumpA">OFF</strong></p>
+        <p>Pump B: <strong id="pumpB">OFF</strong></p>
+      </div>
+
+      <div class="card">
+        <h2>Mode</h2>
+        <button class="button auto" onclick="setMode('AUTO')">AUTO</button>
+        <button class="button manual" onclick="setMode('MANUAL')">
+          MANUAL
+        </button>
+        <p>Current Mode: <strong id="modeText">AUTO</strong></p>
+      </div>
+
+      <div class="card">
+        <h2>Manual Pump Control</h2>
+        <button class="button on" onclick="setPumpA('ON')">Pump A ON</button>
+        <button class="button off" onclick="setPumpA('OFF')">Pump A OFF</button>
+
+        <button class="button on" onclick="setPumpB('ON')">Pump B ON</button>
+        <button class="button off" onclick="setPumpB('OFF')">Pump B OFF</button>
+      </div>
+
+      <div class="card">
+        <h2>Thresholds</h2>
+        <p>Threshold A: <strong id="thA"></strong>%</p>
+        <p>Threshold B: <strong id="thB"></strong>%</p>
+      </div>
+    </div>
+  </body>
+</html>

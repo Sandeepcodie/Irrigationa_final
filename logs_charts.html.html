@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>SM | Analytics & Logs</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="logo-box">
+        <div class="logo">SM</div>
+        <div class="details">
+          IoT Irrigation System <br />
+          Sandeep Mishra <br />
+          B.Tech IIoT – 03619051722 <br />
+          USAR
+        </div>
+      </div>
+
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="logs_charts.html">Analytics</a>
+      </nav>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+      <h1>Analytics & Logs</h1>
+
+      <!-- WIDGETS -->
+      <div class="widget-container">
+        <div class="widget">
+          <h3>Moisture A</h3>
+          <div id="widgetMoistA" class="widget-value">--</div>
+        </div>
+
+        <div class="widget">
+          <h3>Moisture B</h3>
+          <div id="widgetMoistB" class="widget-value">--</div>
+        </div>
+
+        <div class="widget">
+          <h3>Pump A State</h3>
+          <div id="widgetPumpA" class="widget-value green">--</div>
+        </div>
+
+        <div class="widget">
+          <h3>Pump B State</h3>
+          <div id="widgetPumpB" class="widget-value red">--</div>
+        </div>
+      </div>
+
+      <!-- CHARTS -->
+      <div class="chart-grid">
+        <div class="card chart-card">
+          <h2>Moisture Trend (A & B)</h2>
+          <canvas id="moistChart" height="130"></canvas>
+        </div>
+
+        <div class="card chart-card">
+          <h2>Pump Runtime Timeline</h2>
+          <canvas id="pumpChart" height="130"></canvas>
+        </div>
+      </div>
+
+      <!-- LOGS -->
+      <div class="card">
+        <h2>System Logs</h2>
+        <ul id="logList" class="log-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
