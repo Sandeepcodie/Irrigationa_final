@@ -11,14 +11,12 @@ import {
 const firebaseConfig = {
   apiKey: "AIzaSyATGKgMSYMWfU0afbY__osMqCaG-8EKv4Y",
   authDomain: "smart-irrigation-3826a.firebaseapp.com",
-  databaseURL:
-    "https://smart-irrigation-3826a-default-rtdb.asia-southeast1.firebasedatabase.app",
+  databaseURL: "https://smart-irrigation-3826a-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "smart-irrigation-3826a",
-  storageBucket: "smart-irrigation-3826a.firebasestorage.app",
+  storageBucket: "smart-irrigation-3826a.appspot.com",
   messagingSenderId: "299755599351",
-  appId: "1:299755599351:web:268f0a9710a4b3a528eaf2",
+  appId: "1:299755599351:web:268f0a9710a4b3a528eaf2"
 };
-
 const app = initializeApp(firebaseConfig);
 const db = getDatabase();
 
@@ -144,3 +142,4 @@ if (page.includes("logs_charts")) {
     });
   });
 }
+
